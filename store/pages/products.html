@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+
+<body>
+
+
+    <nav class="nav-bar">
+        <ul>
+            <div class="logo">
+                <li><a id="nome" href="../index.html">Suite Store</a></li>
+            </div>
+            <li><a class="active" href="#">Products</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./history.html">History</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="lado1">
+                <div class="forms">
+                    <div class="product">
+                    <input type="text" class="Product" name="Product" value="Product"><br>
+                </div>
+                <div class="ctn">
+                    <input type="text" class="Amount" name="Amount" value="amount"><br>
+                    <input type="text" class="Unit-price" name="Unit-price" value="Unit price" disabled>
+                    <br>
+                    <input type="text" class="Category" name="Category" value="Category"><br>
+                </div>
+            </div>
+            <button class="btn-add">Add Product</button>
+            </div>
+            <hr>
+            <div class="lado2">
+                <table>
+                    <div>
+                        <tr>
+                            <th>Code </th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Unit</th>
+                            <th>Price</th>
+                        </tr>
+                    </div>
+                    <tr>
+
+                        <td>001</td>
+                        <td>Rice</td>
+                        <td>10</td>
+                        <td>20.00</td>
+                        <td>food</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Beans</td>
+                        <td>1</td>
+                        <td>9.00</td>
+                        <td>food</td>
+                    </tr>
+                    <tr class="last-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+
+            </div>
+    </main>
+</body>
+
+</html>
+
+<style>
+    .last-row {
+        border-bottom: none;
+        height: 300px;
+    }
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr {
+        border-bottom: 1px solid #ddd;
+
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-right: 1px solid #ddd;
+
+    }
+     .btn-add {
+        background-color: #6c6ed8;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 3px 160px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 4px;
+        cursor: pointer;
+
+    }
+
+    .btn-add:hover {
+        background-color: #797bdb;
+    }
+
+
+    .Category,.Unit-price {
+        width: 137px;
+    }
+    .Unit-price{
+        margin-right: 5px;
+    }
+    
+    .Amount {
+        width: 100px;
+        margin-right: 5px;
+    }
+    .ctn {
+        display: flex;
+    }
+
+     .Product {
+        width: 400px;
+        margin-bottom: 5px;
+
+    }
+      input {
+        background-color: #ddd;
+        border-color: #cecdcd;
+        color: black;
+        border-style: solid;
+        margin-bottom: 5px;
+    }
+    .lado1 {
+        margin-left: 500px;
+    }
+
+    .lado2 {
+        margin-right: 500px;
+        color: #757474;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    .nome {
+        font-weight: 600;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #6c6ed8;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 400;
+
+    }
+
+    li a:hover {
+        background-color: #797bdb;
+    }
+
+    body {
+        margin: 0;
+        padding: 0%;
+        font-family: "Roboto";
+
+    }
+</style>

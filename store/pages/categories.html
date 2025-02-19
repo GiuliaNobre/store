@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Categories</title>
+    </head>
+    <body>
+    
+        <nav class="nav-bar">
+            <ul>
+                <div class="logo"><li><a id="nome" href="../index.html">Suite Store</a></li></div>
+                <li><a href="./products.html">Products</a></li>
+                <li><a class="active" href="#">Categories</a></li>
+                <li><a href="./history.html">History</a></li>
+            </ul>
+        </nav>
+    <main>
+    <div class="container">
+        <div class="lado1">
+        <div class="forms">
+            <input type="text" class="Category" name="Category" value="Category Name:"><br>
+            <input type="text" class="tax" name="tax" value="Tax:" disabled>
+        </div>
+
+    <div class="button">
+        <button class="btn-add">Add Product</button>
+    </div>
+</div>
+<hr>
+    <div class="lado2">
+
+        <table>
+            <div>
+                <tr>
+                    <th>Code </th>
+                    <th>Category</th>
+                    <th>Tax</th>
+                </tr>
+            </div>
+            <tr>
+
+                <td>001</td>
+                <td>Food</td>
+                <td>10%</td>
+
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Eletro</td>
+                <td>60%</td>
+            </tr>
+            <tr class="last-row">
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+
+        </table>
+
+    </div>
+</div>
+</main>
+</body>
+</html>
+<style>
+    .last-row {
+        border-bottom: none;
+        height: 300px;
+    }
+     table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr {
+        border-bottom: 1px solid #ddd;
+
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-right: 1px solid #ddd;
+
+    }
+     .btn-add {
+        background-color: #6c6ed8;
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 10px 160px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 4px;
+        cursor: pointer;
+        border-radius: 20px;
+
+    }
+   
+     input {
+        background-color: #ddd;
+        border-color: #cecdcd;
+        color: black;
+        border-style: solid;
+        margin-bottom: 5px;
+        width: 400px;
+
+    }
+     hr {
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 500px;
+
+    }
+    .lado1 {
+        margin-left: 500px;
+
+    }
+
+    .lado2 {
+        margin-right: 500px;
+        color: #757474;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+font-size: 20px;
+}
+    nav{
+        margin-bottom: 50px;
+    }
+.nome{
+    font-weight: 600;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6c6ed8;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+ 
+}
+
+li a:hover {
+  background-color:  #797bdb;
+}
+body {
+        margin: 0;
+        padding: 0%;
+         font-family: "Roboto";
+
+    }
+</style>
